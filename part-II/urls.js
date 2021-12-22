@@ -1,4 +1,3 @@
-//Read contents of a file
 const fs = require("fs");
 const axios = require("axios");
 
@@ -41,4 +40,5 @@ async function readFile(path) {
   });
 }
 
-readFile(process.argv[2]);
+const fileName = process.argv[2];
+readFile(fileName);
