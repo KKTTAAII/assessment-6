@@ -30,10 +30,11 @@ Answer the following questions below:
 
 - What is the error-first callback pattern?
 
-        app.use((req, res, next) => {
-          const e = new Error()
-          next(e)
-        })
+        function(err, optional param1, optional param2....){
+          if(err){
+            code here
+          }
+        }
   
 
 - What is middleware?
